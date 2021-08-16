@@ -1,0 +1,28 @@
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: darkblue;
+}
+
+.logo{
+    margin: 0 0 0 .45em; 
+}
+
+.logo a {
+    color: black;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+}
+
+.navigation a:hover {
+    background: rgb(0, 0, 206);
+    color: black;
+}
