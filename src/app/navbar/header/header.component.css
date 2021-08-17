@@ -1,8 +1,10 @@
+*{padding:0; margin: 0;}
+
 .flex-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: darkblue;
+    background: #bbbfca;
 }
 
 .logo{
@@ -13,6 +15,14 @@
     color: black;
 }
 
+.logo, .navigation{
+    list-style: none; /*so no bullets  */
+}
+
+.logo a, .navigation a{
+    text-decoration: none; /*so no underline  */ 
+}
+
 .navigation {
     display: flex;
 }
@@ -20,9 +30,57 @@
 .navigation a {
     display: block;
     color: white;
+    padding: 1em; 
 }
 
 .navigation a:hover {
-    background: rgb(0, 0, 206);
+    background: #e8e8e8;
     color: black;
 }
+
+.nav-number{
+    margin: 0 5px 0 0; 
+    color: #495464;
+
+}
+
+/* Media queries are commonly used in responsive designs in order to display a 
+different layout to different devices, depending on their screen size. */
+/****** about the size of a tablet *********/
+@media all and (max-width: 990px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    
+    .logo {
+    margin: 0;
+  }
+    
+    .navigation  {
+      width: 100%;
+      justify-content: space-around;
+    }
+}
+/****** about the size of a phone *********/
+@media all and (max-width: 600px) {
+ 
+    .logo {
+      margin: .25em 0;
+      align-self: left; /* align the logo to the left side of 'flex-container' */
+  }
+    
+    .navigation {
+      flex-direction: column;
+    } /* have a dropdown menu*/
+
+    .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+      }
+
+      .navigation li:last-of-type a {
+        border-bottom: none;
+      }
+ }
