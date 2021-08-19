@@ -1,0 +1,45 @@
+.landingBody{
+    display: flex;
+    padding:0 150px; 
+    height: 100vh; 
+    align-items: center;
+}
+
+.flex-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h1{ 
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 20px;
+   
+}
+
+h2{
+    font-size: 80px;
+    margin: 0; 
+    text-align: left;
+}
+
+h3{
+    font-size: 80px;
+    margin: 0; 
+    text-align: left;
+}
+
+p{
+    font-size: 20px;
+    margin: 0; 
+    width: 50%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 50px;
+    padding: 25px; 
+}

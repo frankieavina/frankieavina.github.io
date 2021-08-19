@@ -7,8 +7,12 @@ import { HeaderComponent } from './navbar/header/header.component';
 import { AboutComponent } from './about-page/about/about.component';
 import { ContactComponent } from './contact-page/contact/contact.component';
 import { ExperienceComponent } from './experience-page/experience/experience.component';
-import { WorkComponent } from './work-page/work/work.component';
+import { WorkComponent } from './projects/work/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LandingComponent } from './landing-page/landing/landing.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutComponent,
     ContactComponent,
     ExperienceComponent,
-    WorkComponent
+    WorkComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule,
+    MatCardModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
