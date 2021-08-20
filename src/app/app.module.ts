@@ -13,6 +13,8 @@ import { LandingComponent } from './landing-page/landing/landing.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatButtonModule} from '@angular/material/button';
+import { FooterComponent } from './footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {MatChipsModule} from '@angular/material/chips';
     ContactComponent,
     ExperienceComponent,
     WorkComponent,
-    LandingComponent
+    LandingComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import {MatChipsModule} from '@angular/material/chips';
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

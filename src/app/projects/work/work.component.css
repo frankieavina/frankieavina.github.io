@@ -1,5 +1,5 @@
 .project1Image{
-    width: 300px;
+    width: 475px;
     height: 300px;
     object-fit: cover;
     border: 5px solid black; 
@@ -9,6 +9,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 100px; 
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px; 
 }
 
 h2{
@@ -17,7 +25,7 @@ h2{
 
 .projectBody{
     display: flex;
-    height: 125vh;
+    height: 175vh;
     padding: 0 150px; 
     flex-direction: row;
 }
@@ -33,6 +41,11 @@ h2{
 
 .projectCardContainer{
     width: 50%; 
+}
+
+.projectCardContainer2{
+    width: 50%;
+    text-align: right;
 }
 
 

@@ -1,6 +1,6 @@
 .aboutBody{
     display: flex;
-    height: 55vh;
+    height: 75vh;
     padding: 0 150px; 
     flex-direction: row;
 }
@@ -24,7 +24,7 @@
 .flex-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .paragraphAboutMe{
