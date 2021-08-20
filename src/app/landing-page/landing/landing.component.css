@@ -23,12 +23,14 @@ h2{
     font-size: 80px;
     margin: 0; 
     text-align: left;
+    color: #f1e9e5;
 }
 
 h3{
     font-size: 80px;
     margin: 0; 
     text-align: left;
+    color: #b4b897;
 }
 
 p{
@@ -37,9 +39,15 @@ p{
     width: 50%;
     text-align: left;
     margin-top: 20px;
+    color: #b4b897;
 }
 
 button{
     margin-top: 50px;
     padding: 25px; 
 }
+
+.mat-success{
+    background-color: #368b85;
+    color: #f1e9e5;
+  }

@@ -1,6 +1,6 @@
 <div class="aboutBody">
     <div class="aboutContent">
-        <h2 style="margin-bottom: 40px;"><span class="aboutNumber">01.</span>About Me</h2>
+        <h2 style="margin-bottom: 40px;"><span class="aboutNumber">01.</span><span style="color: #f1e9e5; font-size: 1.5em;">About Me</span></h2>
         <div class="flex-container">
             <div class="paragraphAboutMe">
                 <p>
@@ -12,13 +12,13 @@
                     and collaborated with my teammates to make some awesome unique web applications. My main focus these days is to continue on my journey and build more knowledge. 
                 </p>
                 <p>Here are a few technologies I've been working with recently:</p>
-                <ul>
-                    <li>HTML and CSS</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>Angular</li>
-                    <li>Node.js (express and kos)</li>
-                    <li>MySQL and MongoDB</li>
-                </ul>
+                <mat-list>
+                    <!-- <div mat-subheader>Folders</div> -->
+                    <mat-list-item style="height: 50%;" *ngFor="let tech of techs">
+                      <mat-icon mat-list-icon style="color:#368b85;">check_circle</mat-icon>
+                      <div mat-line style="color: #b4b897;">{{tech}}</div>
+                    </mat-list-item>
+                </mat-list>
             </div>
             <div>
                 <img class="fishImage" src="../../../assets/fishingPic.JPG" alt="fishingPic" width="300px">

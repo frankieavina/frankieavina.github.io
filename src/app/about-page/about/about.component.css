@@ -12,19 +12,38 @@
 
 .aboutNumber{
     margin-right: 10px;
+    color: #368b85; 
 }
 
 .fishImage{
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 5px solid black; 
+    border: 5px solid #368b85; 
 }
 
 .flex-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+h2:after
+{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 60%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+li{
+    color: #b4b897;
+}
+
+p{
+    color: #b4b897;
 }
 
 .paragraphAboutMe{

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  techs = ["HTML and CSS","Javascript (ES6+)",'Angular','Node.js (koa.ts and express.js)', 'MySQL and Mondo DB'];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,18 @@
+.footerBody{
+    border: 5px dotted black; 
+    padding: 15px;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: center;
+}
+
+.upwardArrow{
+    display: flex;
+    justify-content: center;
+}
+
+.example-toolTip{
+    background: blue;
+}
