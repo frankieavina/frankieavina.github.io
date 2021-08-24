@@ -33,7 +33,7 @@ h2:after
     content:'';
     display:inline-block;
     border-top: .05rem solid #368b85;
-    width: 60%;
+    width: 50%;
     margin: 0 1rem;
     transform: translateY(-0.5rem);
 }

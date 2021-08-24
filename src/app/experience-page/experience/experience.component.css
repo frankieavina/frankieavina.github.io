@@ -12,12 +12,68 @@
 
 .experienceNumber{
     margin-right: 10px;
+    color: #368b85; 
 }
 
 h2{
     margin-bottom: 40px;
 }
 
+.experienceHeader:after
+{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 20%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+.experienceHeader:before{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 20%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
 li{
     margin:20px; 
+}
+
+.linkWork{
+    color: #368b85;
+}
+
+label{
+    color: #b4b897;
+}
+
+.mat-card-title{
+    color: #f1e9e5;
+}
+
+.mat-card{
+   color: #b4b897;
+   background-color: #464660;
+}
+
+.mat-tab-label{
+    color: #b4b897;
+    font-size: medium;
+}
+
+.mat-card-subtitle{
+    color: #b4b897;
+}
+
+
+element.style {
+    visibility: visible;
+    left: 0px;
+    width: 160px;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: #368b85;
 }

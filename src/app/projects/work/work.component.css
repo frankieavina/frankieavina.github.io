@@ -2,7 +2,12 @@
     width: 475px;
     height: 300px;
     object-fit: cover;
-    border: 5px solid black; 
+    border: 5px solid #368b85; 
+}
+
+
+.fa-github{
+    color: #f1e9e5;
 }
 
 .flex-container{
@@ -23,6 +28,16 @@ h2{
     margin-bottom: 40px;
 }
 
+h2:after
+{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 40%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
 .projectBody{
     display: flex;
     height: 175vh;
@@ -37,6 +52,7 @@ h2{
 
 .projectNumber{
     margin-right: 10px;
+    color: #368b85;
 }
 
 .projectCardContainer{
@@ -48,4 +64,15 @@ h2{
     text-align: right;
 }
 
+
+.mat-chip.mat-standard-chip{
+    color: #f1e9e5;
+    background-color: #368b85;
+}
+
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary{
+    background-color: #f1e9e5;
+    color: #368b85;
+}
 

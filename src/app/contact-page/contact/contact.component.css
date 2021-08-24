@@ -13,6 +13,7 @@
 
 .contactNumber{
     margin-right: 10px;
+    color: #368b85;
 }
 
 
@@ -22,6 +23,36 @@
     justify-content: center;
 }
 
+h2:after
+{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 20%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+h2:before
+{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 20%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+.mat-accent{
+    background-color: #368b85;
+    color: #f1e9e5;
+  }
+
+.mat-accent:hover{
+    filter: brightness(150%);
+}
+
 .paragraphAboutMe{
     width: 65%;
+    color: #b4b897;
 }

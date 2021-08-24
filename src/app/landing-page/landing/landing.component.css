@@ -51,3 +51,7 @@ button{
     background-color: #368b85;
     color: #f1e9e5;
   }
+
+  .mat-success:hover{
+    filter: brightness(150%);
+}

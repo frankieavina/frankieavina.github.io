@@ -1,5 +1,4 @@
-.footerBody{
-    border: 5px dotted black; 
+.footerBody{ 
     padding: 15px;
 }
 
@@ -8,11 +7,22 @@
     justify-content: center;
 }
 
+.footer-text{
+    color: #b4b897;
+    font-size: medium;
+}
+
 .upwardArrow{
     display: flex;
     justify-content: center;
 }
 
 .example-toolTip{
-    background: blue;
+    background: #368b85;
+    font-size: medium;
+}
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, 
+.mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+    background-color: #368b85;
 }
