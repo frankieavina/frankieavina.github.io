@@ -48,7 +48,7 @@ h2:after
 
 .projectBody{
     display: flex;
-    height: 175vh;
+    height: 200vh;
     padding: 0 150px; 
     flex-direction: row;
 }
