@@ -6,6 +6,14 @@
 }
 
 
+.project1Image2{
+    width: 475px;
+    height: 400px;
+    object-fit: cover;
+    border: 5px solid #368b85; 
+}
+
+
 .fa-github{
     color: #f1e9e5;
 }
