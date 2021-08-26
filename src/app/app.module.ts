@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatListModule} from '@angular/material/list';
+import { LoadingComponent } from './load-screen/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatListModule} from '@angular/material/list';
     ExperienceComponent,
     WorkComponent,
     LandingComponent,
-    FooterComponent
+    FooterComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
