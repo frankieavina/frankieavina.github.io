@@ -2,7 +2,8 @@
     width: 475px;
     height: 300px;
     object-fit: cover;
-    border: 5px solid #368b85; 
+    border: 2px solid #f1e9e5; 
+    box-shadow: 10px 10px #368b85;
 }
 
 
@@ -10,7 +11,8 @@
     width: 475px;
     height: 400px;
     object-fit: cover;
-    border: 5px solid #368b85; 
+    border: 2px solid #f1e9e5; 
+    box-shadow: -10px 10px #368b85;
 }
 
 

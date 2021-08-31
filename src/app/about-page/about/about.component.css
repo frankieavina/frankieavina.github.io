@@ -19,7 +19,8 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 5px solid #368b85; 
+    border: 2px solid #f1e9e5; 
+    box-shadow: 20px 20px #368b85;
 }
 
 .flex-container{

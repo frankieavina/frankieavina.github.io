@@ -11,7 +11,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload = "goToTop()">
   <app-root></app-root>
 </body>
+<script>
+  function goToTop(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0; 
+  }
+</script>
 </html>
