@@ -50,7 +50,7 @@ h2:after
 
 .projectBody{
     display: flex;
-    height: 200vh;
+    height: 260vh;
     padding: 0 150px; 
     flex-direction: row;
 }
@@ -72,6 +72,16 @@ h2:after
 .projectCardContainer2{
     width: 50%;
     text-align: right;
+}
+
+.mat-card-subtitle{
+    font-size: large;
+    color: #f1e9e5;
+}
+
+.mat-card-title{
+    color: #368b85;
+    font-size: medium;
 }
 
 
