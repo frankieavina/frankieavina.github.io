@@ -1,0 +1,36 @@
+.example-icon{
+    color: #368b85;
+}
+
+.logo{
+    width: 6em;
+}
+
+.mat-success{
+    background-color: #368b85;
+    color: #f1e9e5;
+  }
+
+.navbarContent {
+    background: #464660;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  p{
+    color: #b4b897;
+  }
+  
+  .sidenavMenuIcon {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidenav {
+    padding: 20px;
+    height: 100%;
+    background: #464660;
+  }

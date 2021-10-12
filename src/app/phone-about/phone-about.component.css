@@ -1,0 +1,40 @@
+.aboutBody{
+    margin-top: 60px;
+    padding: 0 25px; 
+}
+
+.aboutNumber{
+    color: #368b85; 
+    padding: 0 5px; 
+}
+
+.fishImage{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #f1e9e5; 
+    box-shadow: 20px 20px #368b85;
+}
+
+ /* horizontal line  */
+h2:after
+{
+    content:'';
+    display:inline-block;
+    border-top: .05rem solid #368b85;
+    width: 40%;
+    margin: 0 1rem;
+    transform: translateY(-0.5rem);
+}
+
+li{
+    color: #b4b897; 
+}
+
+p{
+    color: #b4b897;
+}
+
+mat-list.mat-list.mat-list-base{
+    padding: 10px 0;
+}

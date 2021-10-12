@@ -1,0 +1,24 @@
+.landingBody{
+    height: 70vh;
+    padding: 0 25px;
+    align-items: center;
+    padding-top: 50px;
+}
+
+h2{
+    color: #f1e9e5;
+}
+
+h3{
+    color: #b4b897;
+}
+
+.mat-success{
+    background-color: #368b85;
+    color: #f1e9e5;
+}
+
+p{
+    color: #b4b897;
+    line-height: 1.2;
+}

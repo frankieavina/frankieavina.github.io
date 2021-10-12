@@ -1,5 +1,5 @@
 .app-splash-screen {
-    background: url("../../../assets/circuit_2.jpeg");
+    background: url("/../../assets/circuit_2.jpeg");
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +28,7 @@
   }
   
   .app-logo {
-    background: url("../../../assets/newLogo.png");
+    background: url("/../../assets/newLogo.png");
     background-repeat: no-repeat;
     max-width: 100%;
     background-position: center;
@@ -39,7 +39,7 @@
   }
   
   .app-loader {
-    background: url("../../../assets/three-dots.svg");
+    background: url("/../../assets/three-dots.svg");
     background-repeat: no-repeat;
     max-width: 100%;
     background-position: center;

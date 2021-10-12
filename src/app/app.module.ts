@@ -3,22 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './navbar/header/header.component';
-import { AboutComponent } from './about-page/about/about.component';
-import { ContactComponent } from './contact-page/contact/contact.component';
-import { ExperienceComponent } from './experience-page/experience/experience.component';
-import { WorkComponent } from './projects/work/work.component';
+import { HeaderComponent } from './navbar/header.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { WorkComponent } from './projects/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LandingComponent } from './landing-page/landing/landing.component';
+import { LandingComponent } from './landing/landing.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatButtonModule} from '@angular/material/button';
-import { FooterComponent } from './footer/footer/footer.component';
+import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatListModule} from '@angular/material/list';
-import { LoadingComponent } from './load-screen/loading/loading.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { LoadingComponent } from './loading/loading.component';
+import { PhoneFooterComponent } from './phone-footer/phone-footer.component';
+import { PhoneAboutComponent } from './phone-about/phone-about.component';
+import { PhoneContactPageComponent } from './phone-contact/phone-contact-page.component';
+import { PhoneExperienceComponent } from './phone-experience/phone-experience.component';
+import { PhoneLandingComponent } from './phone-landing/phone-landing.component';
+import { PhoneNavbarComponent } from './phone-navbar/phone-navbar.component';
+import { PhoneProjectsComponent } from './phone-projects/phone-projects.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +38,14 @@ import { LoadingComponent } from './load-screen/loading/loading.component';
     WorkComponent,
     LandingComponent,
     FooterComponent,
-    LoadingComponent
+    LoadingComponent,
+    PhoneFooterComponent,
+    PhoneAboutComponent,
+    PhoneContactPageComponent,
+    PhoneExperienceComponent,
+    PhoneLandingComponent,
+    PhoneNavbarComponent,
+    PhoneProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +57,8 @@ import { LoadingComponent } from './load-screen/loading/loading.component';
     MatButtonModule,
     MatIconModule,
     MatTooltipModule,
-    MatListModule
+    MatListModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -80,7 +80,7 @@ different layout to different devices, depending on their screen size. */
 
 }
 /****** about the size of a phone *********/
-@media all and (max-width: 600px) {
+@media all and (max-width: 375px) {
  
     .logo {
       margin: .25em 0;

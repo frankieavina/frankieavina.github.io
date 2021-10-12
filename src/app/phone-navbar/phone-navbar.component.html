@@ -1,0 +1,23 @@
+<mat-drawer-container class="navbarContent" autosize>
+
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <p>01. About</p>
+      <p>02. Experience</p>
+      <p>03. Projects</p>
+      <p>04. Contact</p>
+      <button (click)="openResume" mat-raised-button color="success">
+        Resume
+      </button>
+    </mat-drawer>
+
+    
+  <!-- put a menu button  -->
+    <div class="sidenavMenuIcon">
+        <a>
+            <img class="logo" src="../../../assets/logo.png">
+        </a>
+        <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-drawer-container>
