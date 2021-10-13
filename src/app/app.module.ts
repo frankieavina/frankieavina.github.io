@@ -27,6 +27,7 @@ import { PhoneExperienceComponent } from './phone-experience/phone-experience.co
 import { PhoneLandingComponent } from './phone-landing/phone-landing.component';
 import { PhoneNavbarComponent } from './phone-navbar/phone-navbar.component';
 import { PhoneProjectsComponent } from './phone-projects/phone-projects.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { PhoneProjectsComponent } from './phone-projects/phone-projects.componen
     MatIconModule,
     MatTooltipModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

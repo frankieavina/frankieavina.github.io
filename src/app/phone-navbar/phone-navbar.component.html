@@ -1,23 +1,29 @@
-<mat-drawer-container class="navbarContent" autosize>
+<mat-toolbar class="sidenavMenuIcon">
+    <a>
+      <img class="logo" src="../../../assets/logo.png">
+  </a>
+  <button mat-icon-button class="example-icon" (click)="nav.toggle()">
+      <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
 
-    <mat-drawer #drawer class="sidenav" mode="side">
-      <p>01. About</p>
-      <p>02. Experience</p>
-      <p>03. Projects</p>
-      <p>04. Contact</p>
-      <button (click)="openResume" mat-raised-button color="success">
-        Resume
-      </button>
-    </mat-drawer>
+<div class="navbarContent">
 
-    
-  <!-- put a menu button  -->
-    <div class="sidenavMenuIcon">
-        <a>
-            <img class="logo" src="../../../assets/logo.png">
-        </a>
-        <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
-            <mat-icon>menu</mat-icon>
+  <mat-sidenav-container class="navContainer">
+    <mat-sidenav #nav mode="side" [fixedInViewport]="true" fixedTopGap="56">
+      <mat-nav-list class="sidenav">
+        <p><span routerLink="." fragment="section-1" class="num">01.</span> About</p>
+        <p><span routerLink="." fragment="section-2" class="num">02.</span>  Experience</p>
+        <p><span routerLink="." fragment="section-3" class="num">03.</span>  Projects</p>
+        <p><span routerLink="." fragment="section-4" class="num">04.</span>  Contact</p>
+        <button (click)="openResume" mat-raised-button color="success">
+          Resume
         </button>
-    </div>
-</mat-drawer-container>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>  
+
+</div>
+
