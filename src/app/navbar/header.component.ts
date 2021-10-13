@@ -22,11 +22,5 @@ export class HeaderComponent implements OnInit {
     window.open(pdfUrl, '_blank','',true);
   }
 
-  // downloadPdf() {
-  //   const pdfUrl = './assets/web-developer-francisco-avina.pdf';
-  //   const pdfName = 'Frankies Resume';
-  //   FileSaver.saveAs(pdfUrl, pdfName);
-  // }
-
 
 }

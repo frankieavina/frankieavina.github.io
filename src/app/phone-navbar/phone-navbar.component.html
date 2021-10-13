@@ -7,18 +7,19 @@
   </button>
 </mat-toolbar>
 
-<div class="navbarContent">
+<div class="navbarContent" id="top-of-page">
 
   <mat-sidenav-container class="navContainer">
-    <mat-sidenav #nav mode="side" [fixedInViewport]="true" fixedTopGap="56">
+    <mat-sidenav #nav mode="side" [fixedInViewport]="true" fixedTopGap="55">
       <mat-nav-list class="sidenav">
-        <p><span routerLink="." fragment="section-1" class="num">01.</span> About</p>
-        <p><span routerLink="." fragment="section-2" class="num">02.</span>  Experience</p>
-        <p><span routerLink="." fragment="section-3" class="num">03.</span>  Projects</p>
-        <p><span routerLink="." fragment="section-4" class="num">04.</span>  Contact</p>
-        <button (click)="openResume" mat-raised-button color="success">
+        <button mat-icon-button (click)="nav.toggle()"><mat-icon style="color: #368b85;">close</mat-icon></button>
+        <p (click)="nav.toggle()" routerLink="." fragment="section-1" ><span class="num">01.</span> About</p>
+        <p (click)="nav.toggle()" routerLink="." fragment="section-2"><span class="num">02.</span>  Experience</p>
+        <p (click)="nav.toggle()" routerLink="." fragment="section-3"><span class="num">03.</span>  Projects</p>
+        <p (click)="nav.toggle()" routerLink="." fragment="section-4"><span class="num">04.</span>  Contact</p>
+        <a (click)="openResume()"><button  mat-raised-button color="success">
           Resume
-        </button>
+        </button></a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
