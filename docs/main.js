@@ -500,7 +500,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _phone_landing_phone_landing_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./phone-landing/phone-landing.component */ "iDE+");
 /* harmony import */ var _phone_navbar_phone_navbar_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./phone-navbar/phone-navbar.component */ "eSSb");
 /* harmony import */ var _phone_projects_phone_projects_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./phone-projects/phone-projects.component */ "h6US");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/toolbar */ "/t3+");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
 
 
 
@@ -532,8 +534,8 @@ __webpack_require__.r(__webpack_exports__);
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_27__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
-AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_27__["ɵɵdefineInjector"]({ providers: [], imports: [[
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_28__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_28__["ɵɵdefineInjector"]({ providers: [], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_1__["AppRoutingModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__["BrowserAnimationsModule"],
@@ -544,9 +546,10 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_27__["ɵɵdefineInjecto
             _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"],
             _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_16__["MatTooltipModule"],
             _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"],
-            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_18__["MatSidenavModule"]
+            _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_18__["MatSidenavModule"],
+            _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_27__["MatToolbarModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_27__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_28__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
         _navbar_header_component__WEBPACK_IMPORTED_MODULE_3__["HeaderComponent"],
         _about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"],
         _contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"],
@@ -571,7 +574,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_27__["ɵɵdefineInjecto
         _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__["MatIconModule"],
         _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_16__["MatTooltipModule"],
         _angular_material_list__WEBPACK_IMPORTED_MODULE_17__["MatListModule"],
-        _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_18__["MatSidenavModule"]] }); })();
+        _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_18__["MatSidenavModule"],
+        _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_27__["MatToolbarModule"]] }); })();
 
 
 /***/ }),
@@ -642,9 +646,15 @@ ContactComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhoneNavbarComponent", function() { return PhoneNavbarComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/sidenav */ "XhcP");
+/* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/toolbar */ "/t3+");
 /* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "bTqV");
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/icon */ "NFeN");
+/* harmony import */ var _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/sidenav */ "XhcP");
+/* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/list */ "MutI");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "tyNb");
+
+
+
 
 
 
@@ -661,40 +671,60 @@ class PhoneNavbarComponent {
     }
 }
 PhoneNavbarComponent.ɵfac = function PhoneNavbarComponent_Factory(t) { return new (t || PhoneNavbarComponent)(); };
-PhoneNavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PhoneNavbarComponent, selectors: [["app-phone-navbar"]], decls: 19, vars: 0, consts: [["autosize", "", 1, "navbarContent"], ["mode", "side", 1, "sidenav"], ["drawer", ""], ["mat-raised-button", "", "color", "success", 3, "click"], [1, "sidenavMenuIcon"], ["src", "../../../assets/logo.png", 1, "logo"], ["mat-icon-button", "", 1, "example-icon", 3, "click"]], template: function PhoneNavbarComponent_Template(rf, ctx) { if (rf & 1) {
+PhoneNavbarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PhoneNavbarComponent, selectors: [["app-phone-navbar"]], decls: 30, vars: 1, consts: [[1, "sidenavMenuIcon"], ["src", "../../../assets/logo.png", 1, "logo"], ["mat-icon-button", "", 1, "example-icon", 3, "click"], [1, "navbarContent"], [1, "navContainer"], ["mode", "side", "fixedTopGap", "56", 3, "fixedInViewport"], ["nav", ""], [1, "sidenav"], ["routerLink", ".", "fragment", "section-1", 1, "num"], ["routerLink", ".", "fragment", "section-2", 1, "num"], ["routerLink", ".", "fragment", "section-3", 1, "num"], ["routerLink", ".", "fragment", "section-4", 1, "num"], ["mat-raised-button", "", "color", "success", 3, "click"]], template: function PhoneNavbarComponent_Template(rf, ctx) { if (rf & 1) {
         const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-drawer-container", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-drawer", 1, 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "01. About");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-toolbar", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "02. Experience");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "03. Projects");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "04. Contact");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PhoneNavbarComponent_Template_button_click_11_listener() { return ctx.openResume; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Resume ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "img", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "button", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PhoneNavbarComponent_Template_button_click_16_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](2); return _r0.toggle(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "mat-icon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "menu");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PhoneNavbarComponent_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](9); return _r0.toggle(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-icon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "menu");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "mat-sidenav-container", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "mat-sidenav", 5, 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "mat-nav-list", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "span", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "01.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_angular_material_sidenav__WEBPACK_IMPORTED_MODULE_1__["MatDrawerContainer"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_1__["MatDrawer"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"]], styles: [".example-icon[_ngcontent-%COMP%]{\n    color: #368b85;\n}\n\n.logo[_ngcontent-%COMP%]{\n    width: 6em;\n}\n\n.mat-success[_ngcontent-%COMP%]{\n    background-color: #368b85;\n    color: #f1e9e5;\n  }\n\n.navbarContent[_ngcontent-%COMP%] {\n    background: #464660;\n    height: 100px;\n    padding-left: 20px;\n    padding-right: 20px;\n  }\n\np[_ngcontent-%COMP%]{\n    color: #b4b897;\n  }\n\n.sidenavMenuIcon[_ngcontent-%COMP%] {\n    display: flex;\n    height: 100%;\n    align-items: center;\n    justify-content: space-between;\n  }\n\n.sidenav[_ngcontent-%COMP%] {\n    padding: 20px;\n    height: 100%;\n    background: #464660;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBob25lLW5hdmJhci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksY0FBYztBQUNsQjs7QUFFQTtJQUNJLFVBQVU7QUFDZDs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixjQUFjO0VBQ2hCOztBQUVGO0lBQ0ksbUJBQW1CO0lBQ25CLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsbUJBQW1CO0VBQ3JCOztBQUVBO0lBQ0UsY0FBYztFQUNoQjs7QUFFQTtJQUNFLGFBQWE7SUFDYixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLGFBQWE7SUFDYixZQUFZO0lBQ1osbUJBQW1CO0VBQ3JCIiwiZmlsZSI6InBob25lLW5hdmJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtaWNvbntcbiAgICBjb2xvcjogIzM2OGI4NTtcbn1cblxuLmxvZ297XG4gICAgd2lkdGg6IDZlbTtcbn1cblxuLm1hdC1zdWNjZXNze1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMzNjhiODU7XG4gICAgY29sb3I6ICNmMWU5ZTU7XG4gIH1cblxuLm5hdmJhckNvbnRlbnQge1xuICAgIGJhY2tncm91bmQ6ICM0NjQ2NjA7XG4gICAgaGVpZ2h0OiAxMDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDIwcHg7XG4gICAgcGFkZGluZy1yaWdodDogMjBweDtcbiAgfVxuXG4gIHB7XG4gICAgY29sb3I6ICNiNGI4OTc7XG4gIH1cbiAgXG4gIC5zaWRlbmF2TWVudUljb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICB9XG4gIFxuICAuc2lkZW5hdiB7XG4gICAgcGFkZGluZzogMjBweDtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgYmFja2dyb3VuZDogIzQ2NDY2MDtcbiAgfSJdfQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, " About");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "span", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "02.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, " Experience");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "03.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " Projects");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "span", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "04.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " Contact");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "button", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function PhoneNavbarComponent_Template_button_click_27_listener() { return ctx.openResume; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " Resume ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "mat-sidenav-content");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("fixedInViewport", true);
+    } }, directives: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__["MatToolbar"], _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButton"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_3__["MatIcon"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_4__["MatSidenavContainer"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_4__["MatSidenav"], _angular_material_list__WEBPACK_IMPORTED_MODULE_5__["MatNavList"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterLink"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_4__["MatSidenavContent"]], styles: [".example-icon[_ngcontent-%COMP%]{\n    color: #368b85;\n}\n\n.logo[_ngcontent-%COMP%]{\n    width: 6em;\n}\n\n.mat-success[_ngcontent-%COMP%]{\n    background-color: #368b85;\n    color: #f1e9e5;\n  }\n\n.navbarContent[_ngcontent-%COMP%] {\n    background: #464660;\n    height: 100px;\n    padding-left: 20px;\n    padding-right: 20px;\n  }\n\n.num[_ngcontent-%COMP%]{\n  color: #368b85;\n}\n\np[_ngcontent-%COMP%]{\n    color: #b4b897;\n  }\n\n.sidenavMenuIcon[_ngcontent-%COMP%] {\n    display: flex;\n    height: 100%;\n    align-items: center;\n    justify-content: space-between;\n    background: #464660;\n    border: none;\n    padding-top: 10px;\n  }\n\n.sidenav[_ngcontent-%COMP%] {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n\n    padding: 0 15px 25px 15px;\n    height: 100%;\n    background: #464660;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBob25lLW5hdmJhci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksY0FBYztBQUNsQjs7QUFFQTtJQUNJLFVBQVU7QUFDZDs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixjQUFjO0VBQ2hCOztBQUlGO0lBQ0ksbUJBQW1CO0lBQ25CLGFBQWE7SUFDYixrQkFBa0I7SUFDbEIsbUJBQW1CO0VBQ3JCOztBQUVGO0VBQ0UsY0FBYztBQUNoQjs7QUFFRTtJQUNFLGNBQWM7RUFDaEI7O0FBRUE7SUFDRSxhQUFhO0lBQ2IsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixpQkFBaUI7RUFDbkI7O0FBRUE7SUFDRSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDZCQUE2Qjs7SUFFN0IseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7RUFDckIiLCJmaWxlIjoicGhvbmUtbmF2YmFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1pY29ue1xuICAgIGNvbG9yOiAjMzY4Yjg1O1xufVxuXG4ubG9nb3tcbiAgICB3aWR0aDogNmVtO1xufVxuXG4ubWF0LXN1Y2Nlc3N7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzM2OGI4NTtcbiAgICBjb2xvcjogI2YxZTllNTtcbiAgfVxuXG5cblxuLm5hdmJhckNvbnRlbnQge1xuICAgIGJhY2tncm91bmQ6ICM0NjQ2NjA7XG4gICAgaGVpZ2h0OiAxMDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDIwcHg7XG4gICAgcGFkZGluZy1yaWdodDogMjBweDtcbiAgfVxuXG4ubnVte1xuICBjb2xvcjogIzM2OGI4NTtcbn1cblxuICBwe1xuICAgIGNvbG9yOiAjYjRiODk3O1xuICB9XG4gIFxuICAuc2lkZW5hdk1lbnVJY29uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBiYWNrZ3JvdW5kOiAjNDY0NjYwO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nLXRvcDogMTBweDtcbiAgfVxuICBcbiAgLnNpZGVuYXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcblxuICAgIHBhZGRpbmc6IDAgMTVweCAyNXB4IDE1cHg7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGJhY2tncm91bmQ6ICM0NjQ2NjA7XG4gIH0iXX0= */"] });
 
 
 /***/ }),
@@ -878,7 +908,7 @@ PhoneLandingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"]], styles: [".landingBody[_ngcontent-%COMP%]{\n    height: 70vh;\n    padding: 0 25px;\n    align-items: center;\n    padding-top: 50px;\n}\n\nh2[_ngcontent-%COMP%]{\n    color: #f1e9e5;\n}\n\nh3[_ngcontent-%COMP%]{\n    color: #b4b897;\n}\n\n.mat-success[_ngcontent-%COMP%]{\n    background-color: #368b85;\n    color: #f1e9e5;\n}\n\np[_ngcontent-%COMP%]{\n    color: #b4b897;\n    line-height: 1.2;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBob25lLWxhbmRpbmcuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxjQUFjO0lBQ2QsZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InBob25lLWxhbmRpbmcuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sYW5kaW5nQm9keXtcbiAgICBoZWlnaHQ6IDcwdmg7XG4gICAgcGFkZGluZzogMCAyNXB4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZy10b3A6IDUwcHg7XG59XG5cbmgye1xuICAgIGNvbG9yOiAjZjFlOWU1O1xufVxuXG5oM3tcbiAgICBjb2xvcjogI2I0Yjg5Nztcbn1cblxuLm1hdC1zdWNjZXNze1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMzNjhiODU7XG4gICAgY29sb3I6ICNmMWU5ZTU7XG59XG5cbnB7XG4gICAgY29sb3I6ICNiNGI4OTc7XG4gICAgbGluZS1oZWlnaHQ6IDEuMjtcbn0iXX0= */"] });
+    } }, directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"]], styles: [".landingBody[_ngcontent-%COMP%]{\n    height: 65vh;\n    padding: 0 25px;\n    align-items: center;\n    padding-top: 50px;\n}\n\nh2[_ngcontent-%COMP%]{\n    color: #f1e9e5;\n}\n\nh3[_ngcontent-%COMP%]{\n    color: #b4b897;\n}\n\n.mat-success[_ngcontent-%COMP%]{\n    background-color: #368b85;\n    color: #f1e9e5;\n}\n\np[_ngcontent-%COMP%]{\n    color: #b4b897;\n    line-height: 1.2;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBob25lLWxhbmRpbmcuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxjQUFjO0FBQ2xCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxjQUFjO0lBQ2QsZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InBob25lLWxhbmRpbmcuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sYW5kaW5nQm9keXtcbiAgICBoZWlnaHQ6IDY1dmg7XG4gICAgcGFkZGluZzogMCAyNXB4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZy10b3A6IDUwcHg7XG59XG5cbmgye1xuICAgIGNvbG9yOiAjZjFlOWU1O1xufVxuXG5oM3tcbiAgICBjb2xvcjogI2I0Yjg5Nztcbn1cblxuLm1hdC1zdWNjZXNze1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMzNjhiODU7XG4gICAgY29sb3I6ICNmMWU5ZTU7XG59XG5cbnB7XG4gICAgY29sb3I6ICNiNGI4OTc7XG4gICAgbGluZS1oZWlnaHQ6IDEuMjtcbn0iXX0= */"] });
 
 
 /***/ }),
@@ -1260,7 +1290,7 @@ PhoneAboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " Hello! My name is Frankie and I enjoy developing applications. My love for technology started back in 2010 when I decided to pursue a career in computer engineering. There I learned a lot of computer languages and fundamentals. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Fast forward to today, I've had the privelage to join Bay Valley Tech where I learned about software development. Afwerwards I had the opportunity to intern with Bay Valley Tech. and collaborated with my teammates to make some awesome unique web applications. My main focus these days is to continue on my journey and build more knowledge. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Fast forward to today, I've had the privilege to join Bay Valley Tech where I learned about software development. Afwerwards I had the opportunity to intern with Bay Valley Tech. and collaborated with my teammates to make some awesome unique web applications. My main focus these days is to continue on my journey and build more knowledge. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Here are a few technologies I've been working with recently:");
